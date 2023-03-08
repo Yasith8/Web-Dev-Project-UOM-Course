@@ -1,0 +1,41 @@
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+caption {
+    font-family: "poppins";
+    font-weight: bolder;
+    text-align: center;
+    font-size: 2rem;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+@media (max-width: 767px) {
+    table {
+        font-size: 14px;
+    }
+    th,
+    td {
+        padding: 5px;
+    }
+}
