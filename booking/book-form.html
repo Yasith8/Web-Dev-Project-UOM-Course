@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="book-style.css">
+    <title>Book Now</title>
+    <link rel="icon" href="booking/fin.png">
+</head>
+
+<body>
+    <form>
+        <h2>Book a Room</h2>
+        <label for="checkin-date">Check-in Date:</label>
+        <input type="date" id="checkin-date" required />
+        <label for="checkout-date">Check-out Date:</label>
+        <input type="date" id="checkout-date" required />
+        <label for="room-type">Room Type:</label>
+        <select id="room-type" required>
+          <option value="">Select Room Type</option>
+          <option value="single">Single Room</option>
+          <option value="double">Double Room</option>
+          <option value="suite">Suite</option>
+        </select>
+        <label for="num-guests">Number of Guests:</label>
+        <input type="number" id="num-guests" min="1" max="4" required />
+        <button type="submit">Book Now</button>
+    </form>
+
+
+
+
+    <script src="book-index.js"></script>
+
+</body>
+
+</html>
